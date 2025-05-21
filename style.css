@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Tagesschrift&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tagesschrift", system-ui;
+}
+:root{
+    --clr-gradient: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+    --font-1 : "Satisfy", cursive;
+    --font-2 : "Poetsen One", sans-serif;
+    --font-3 : "PT Serif", serif;
+
+
+    /* colur property */
+    --clr-white: #fff;
+    --clr-dark: #333;
+    --clr-gray-1: #102a42;
+    --clr-gray-2: #617d98;
+    --clr-gray-3: #f1f5f8;
+    --clr-primary: #f53b57;
+    --clr-primary-light: #f04660;
+    --clr-secondary: #e9b949;
+
+    --transition: all 0.3s linear;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.container h3{
+    margin-top: 30px;
+    padding-bottom: 20px;
+    color: transparent;
+    background: var(--clr-gradient);
+    background-clip: text;
+}
+
+input{
+    height: 40px;
+    width: 280px;
+    border: none;
+box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.inp1{
+    margin-top: 0px;
+    height: 100%;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+}
+
+@media (max-width: 960px) {
+    .inp1{
+        width: 80%;
+    }
+}
+
+.btn{
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #f53b57;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form-group{
+    height: 35px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control{
+    width: 15rem;
+    height: 100%;
+    background: none;
+    outline: none;
+    padding: 16px;
+    border-radius: 3px;
+    resize: none;
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+}
+
+/* ------------------- */
+
+.contact-form .form-group label{
+    font-family: var(--font-2);
+
+}
+
+textarea.form-control{
+    height: 100px;
+}
+
+.form-label{
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    color: var(--clr-gray-2);
+    background-color: var(--clr-white);
+    padding: 0 6px;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.form-control:focus + .form-label{
+    top: -10px;
+    color: var(--clr-primary);
+    z-index: 20;
+}
+
+.form-control:focus{
+    border:1px solid var(--clr-primary);
+}
+
+.form-control:not:focus:valid + label{
+    top: -10px;
+    z-index: 10;
+}
+
+/* ------------- */
+#frm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 18px;
+}
+
+button svg{
+    width: 25px;
+}
+
+.tbl{
+    width: 500px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+tbody{
+    width: inherit;
+    text-align: center;
+}
+
+table tr td{
+    padding: 10px 0;
+}
+
+.btn-edit svg,
+.btn-delete svg{
+    pointer-events: none;
+}

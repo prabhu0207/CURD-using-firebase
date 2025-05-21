@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>CURD by JavaScript with Firebase</h3>
+        <div class="inp1">
+            <form action="#" id="frm">
+                <input type="hidden" id="id">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" required>
+                    <label for="" class="form-label">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="age" >
+                    <label for="" class="form-label">Age</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="city" >
+                    <label for="" class="form-label">City</label>
+                </div>
+                <button type="submit" class="btn" id="subtn">Save</button>
+            </form>
+        </div>
+        <table class="tbl">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tblBody">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+<script src="script.js" type="module"></script>
+</body>
+</html>
