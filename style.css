@@ -128,7 +128,7 @@ textarea.form-control{
     border:1px solid var(--clr-primary);
 }
 
-.form-control:not:focus:valid + label{
+.form-control:not(:focus):valid + label{
     top: -10px;
     z-index: 10;
 }
